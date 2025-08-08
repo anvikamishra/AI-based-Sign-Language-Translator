@@ -1,6 +1,7 @@
 **AI-Based Sign Language Translator**
 
 **Overview**
+
 The **AI-Based Sign Language Translator** is a computer vision project that detects and recognizes hand gestures in real time, converting them into corresponding letters, words, and speech.  
 Currently, the system supports **5 letters**, with scope for expansion to the entire alphabet and numerals.
 
@@ -19,3 +20,4 @@ This project aims to bridge the communication gap between the deaf/mute communit
 - **MediaPipe** – for hand tracking
 - **TensorFlow/Keras** – for gesture classification
 - **Pyttsx3** – for text-to-speech conversion
+
