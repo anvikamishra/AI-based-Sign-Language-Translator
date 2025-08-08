@@ -4,20 +4,20 @@ import time
 import math
 import pyttsx3
 
-# === Webcam & MediaPipe ===
+#Webcam & MediaPipe
 cap = cv2.VideoCapture(0)
 mp_hands = mp.solutions.hands
 hands = mp_hands.Hands(static_image_mode=False, max_num_hands=2, min_detection_confidence=0.7)
 mp_draw = mp.solutions.drawing_utils
 
-# === State tracking ===
+#State tracking
 pTime = 0
 prev_letter = ""
 letter_hold_count = 0
 text = ""
 HOLD_FRAMES = 15
 
-# === Helpers ===
+#Helpers
 def distance(p1, p2):
     return math.hypot(p2[0] - p1[0], p2[1] - p1[1])
 
@@ -89,7 +89,7 @@ def detect_letter(lm, img_shape):
 
     return ""
 
-# === Main loop ===
+#Main loop
 while True:
     success, img = cap.read()
     if not success:
@@ -146,3 +146,4 @@ while True:
 
 cap.release()
 cv2.destroyAllWindows()
+
